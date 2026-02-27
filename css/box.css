@@ -1,0 +1,16 @@
+.box {
+    position: absolute;
+    min-width: 40px;
+    min-height: 40px;
+    border: 2px dashed #000000;
+    box-shadow: inset 1px 1px 1px;
+    background-color: #d6d6d6;
+
+    --x: 0%; 
+    --y: 0%;
+    
+    left: var(--x);
+    top: var(--y);
+
+    transform: translate(calc(-1 * var(--x)), calc(-1 * var(--y)));
+}

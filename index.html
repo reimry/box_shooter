@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BOX SHOOTER</title>
+
+    <link rel="stylesheet" href="css/css.css">
+    <link rel="stylesheet" href="css/button.css">
+    <link rel="stylesheet" href="css/hud_windows.css">
+    <link rel="stylesheet" href="css/game_container.css">
+    <link rel="stylesheet" href="css/accessibility.css">
+    <link rel="stylesheet" href="css/box.css">
+</head>
+<body>
+    <div id="wrapper">
+        <header>
+            <h1>BOX SHOOTER</h1>
+        </header>
+        <main>
+            <header>
+                <div class="hud-window">
+                    <div id="timer" class="display-content inactive">00:00</div>
+                </div>
+
+                <div class="hud-window">
+                    <div id="score" class="display-content inactive">0</div>
+                </div>
+            </header>
+            <div class="game-wrapper">
+                <div id="game-container">
+                    <button id="start">
+                        <span class="button_top"> Start Game </span>
+                    </button>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <script type="module" src="js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,35 @@
+/* The Cosmetic Frame */
+.game-wrapper {
+    flex: 1;
+    position: relative;
+    /* Move all your "heavy" styles here */
+    border: 10px solid #000000;
+    border-top-width: 25px;
+    border-radius: 15px;
+    box-shadow: 
+        0 12px 0 rgba(0,0,0,0.1),
+        inset 0 15px 15px rgba(0,0,0,0.2),
+        inset 0 -10px 15px rgba(255,255,255,0.5);
+    
+    /* Set dimensions for the outer frame */
+    /* width: 600px;  */
+    /* height: 100%; */
+    overflow: hidden; /* Important: keeps the canvas inside */
+}
+
+/* The Clean Playable Area */
+#game-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    
+    width: 100%;
+    height: 100%;
+    
+    /* Only visual grid styles remain here */
+    background-color: #fcfcfc;
+    background-image: 
+        linear-gradient(rgba(0,0,0,0.03) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(0,0,0,0.03) 1px, transparent 1px);
+    background-size: 40px 40px;
+}

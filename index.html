@@ -5,33 +5,52 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>BOX SHOOTER</title>
 
+    <!-- fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&display=swap" rel="stylesheet">
+
+
+
     <link rel="stylesheet" href="css/css.css">
     <link rel="stylesheet" href="css/button.css">
     <link rel="stylesheet" href="css/hud_windows.css">
     <link rel="stylesheet" href="css/game_container.css">
     <link rel="stylesheet" href="css/accessibility.css">
     <link rel="stylesheet" href="css/box.css">
+    <link rel="stylesheet" href="css/score_display.css">
 </head>
 <body>
     <div id="wrapper">
         <header>
-            <h1>BOX SHOOTER</h1>
+            <h1 class="press-start-2p-regular">BOX SHOOTER</h1>
         </header>
-        <main>
+        <main class="fredoka">
             <header>
-                <div class="hud-window">
-                    <div id="timer" class="display-content inactive">00:00</div>
-                </div>
+                <div id="hud_container">
+                    <div class="hud-window">
 
-                <div class="hud-window">
-                    <div id="score" class="display-content inactive">0</div>
+                        <div class="timer_container">
+                            <span> TIMER </span>
+                            <div id="timer" class="display-content inactive">00:00</div>
+                        </div>
+                        <div class="score_container">
+                            <span> SCORE </span>
+                            <div id="score" class="display-content inactive">0</div>
+                        </div>
+
+                    </div>
                 </div>
             </header>
             <div class="game-wrapper">
-                <div id="game-container">
-                    <button id="start">
-                        <span class="button_top"> Start Game </span>
-                    </button>
+                <div class="game-container">
+                    <div id="game-container">
+                        <div id="scoreDisplay" hidden></div>
+                        <button id="start">
+                            <span class="button_top"> Start Game </span>
+                        </button>
+                    </div>
                 </div>
             </div>
         </main>

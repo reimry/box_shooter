@@ -17,3 +17,8 @@ git merge <branch-name> (combine a completed feature into your main branch)
 git remote add origin <url> (link your local repo to GitHub/GitLab)
 
 git push -u origin main (upload your code to the server for the first time)
+
+
+
+
+add falling animation for the game name (box shooter)

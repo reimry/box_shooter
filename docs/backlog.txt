@@ -1,0 +1,13 @@
+- design interesting logo name for the game 'box shooter'. Something with depth, maybe pixel art.
+
+- add loading animation. In the center of the screen from the top boxes starts to fall. After they reach the baseline, they destroty themselves and the letter of the game appears.
+
+- add leaderbord logic.
+
+- add 'sign in with google' to save game data.
+
+- add the possibility to choose time.
+
+- add the possibility to handle the SPAWN_TIME and DESTROY_TIME
+
+- add different 'kinds' of boxes. Ones that need to be clicked more then one time. Once that change their location when clicked. 

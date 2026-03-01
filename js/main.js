@@ -1,26 +1,20 @@
 import { startGame } from './game-logic.js';
 import { setCurrentTime } from './utils.js';
-export { startButton, gameContainer };
 
 const timer = document.getElementById('timer');
 const score = document.getElementById('score');
 const gameContainer = document.getElementById('game-container');
 const startButton = document.getElementById('start');
+const scoreDisplay = document.getElementById('scoreDisplay');
 
-let timeLimit = 15;
-let scoreCount = 0;
+const timeLimit = 10;
+const gameConfig = [timer, score, scoreDisplay, startButton, gameContainer, timeLimit]
 
 timer.textContent = setCurrentTime(timeLimit);
 
 startButton.addEventListener('click', event => {
-    startGame(timer, score, gameContainer, timeLimit);
+    startGame(gameConfig);
     startButton.hidden = true;
+    scoreDisplay.hidden = true;
 })
 
-gameContainer.addEventListener('click', event => {
-    if (event.target.classList.contains('box')) {
-        gameContainer.removeChild(event.target);
-        scoreCount++;
-        score.textContent = scoreCount;
-    }
-})

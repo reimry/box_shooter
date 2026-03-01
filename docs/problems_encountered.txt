@@ -1,0 +1,4 @@
+    when using elem.animate() and css transform inside of it, it will overwrite
+the existing style in ypu stylesheet.
+    instead of using transform: translate... for everything, -- use these
+independetly -- translate: ...

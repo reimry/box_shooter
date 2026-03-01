@@ -1,22 +1,37 @@
+#hud_container {
+    
+
+    position: absolute;
+    top: 50%;
+    z-index: 1;
+    width: 60%;
+
+    background: #000000;
+    padding: 8px 4px 4px 4px; 
+    border-radius: 8px 8px 4px 4px;
+    /* box-shadow: 0 8px 0 rgba(0,0,0,0.2); */
+}
+
 .hud-window {
     /* position: absolute;
     top: 20px; */
-    background: #000000; /* The black 'hood' */
-    padding: 8px 4px 4px 4px; /* Thicker on top to create the 'overhang' */
-    border-radius: 8px 8px 4px 4px;
-    /* This shadow creates the 'depth' into the dashboard */
-    box-shadow: 0 8px 0 rgba(0,0,0,0.2); 
+    display: flex;
+    justify-content: space-between;
+    background: #e8e8e8;
+    padding: 0 20px;
+   
+    box-shadow: inset 0px 4px 4px rgba(0,0,0,0.3);
+    border: 2px solid #000;
 }
 
 .display-content {
-    background: #e8e8e8; /* Your light color */
+     /* Your light color */
     color: #000;
     font-family: 'Courier New', monospace;
     font-weight: bold;
-    padding: 10px 20px;
-    border-radius: 4px;
+    /*  */
+    
     /* The Magic Part: Inner shadow makes the screen look 'recessed' */
-    box-shadow: inset 0px 4px 4px rgba(0,0,0,0.3);
-    border: 2px solid #000;
+    
 }
 

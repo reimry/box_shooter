@@ -20,5 +20,3 @@ git push -u origin main (upload your code to the server for the first time)
 
 
 
-
-add falling animation for the game name (box shooter)

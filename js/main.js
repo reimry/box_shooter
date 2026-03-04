@@ -1,20 +1,21 @@
-import { startGame } from './game-logic.js';
-import { setCurrentTime } from './utils.js';
+import { GameEngine, GAME_CONFIG } from "./game-logic.js";
+import { UIManager } from "./UIManager.js";
 
-const timer = document.getElementById('timer');
-const score = document.getElementById('score');
-const gameContainer = document.getElementById('game-container');
-const startButton = document.getElementById('start');
-const scoreDisplay = document.getElementById('scoreDisplay');
+const UIElements = {
+  timer: document.getElementById("timer"),
+  score: document.getElementById("score"),
+  gameContainer: document.getElementById("game-container"),
+  startButton: document.getElementById("start"),
+  scoreDisplay: document.getElementById("scoreDisplay"),
+};
 
-const timeLimit = 10;
-const gameConfig = [timer, score, scoreDisplay, startButton, gameContainer, timeLimit]
+const ui = new UIManager(UIElements);
+const game = new GameEngine(ui, GAME_CONFIG);
 
-timer.textContent = setCurrentTime(timeLimit);
+ui.onStartClick(() => {
+  game.start();
+});
 
-startButton.addEventListener('click', event => {
-    startGame(gameConfig);
-    startButton.hidden = true;
-    scoreDisplay.hidden = true;
-})
-
+ui.onBoxClick((boxId) => {
+  game.handleBoxClick(boxId);
+});
